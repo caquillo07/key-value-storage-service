@@ -1,4 +1,4 @@
-import createError from 'http-errors';
+// import createError from 'http-errors';
 import express from 'express';
 import logger from 'morgan';
 // Routes
@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/', routes);
 
 // catch 404 and forward to error handler
-app.use((req, res, next) => next(createError(404)));
+// app.use((req, res, next) => next(createError(404)));
 
 // error handling
 app.use((err, req, res, next) => {
